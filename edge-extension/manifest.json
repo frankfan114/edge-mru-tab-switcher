@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Edge MRU Bridge",
+  "version": "1.6.0",
+  "description": "Event-driven Edge MRU switching with per-window scope, cached previews, persistence, and adaptive UI.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "favicon"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:27123/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Edge MRU settings",
+    "default_popup": "options.html"
+  },
+  "options_page": "options.html"
+}
