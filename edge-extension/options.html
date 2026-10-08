@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Edge MRU settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>Edge MRU</h1>
+
+    <label for="maxTabs">Recent tabs shown</label>
+    <div class="row">
+      <input id="maxTabs" type="range" min="2" max="25" step="1">
+      <output id="maxTabsValue">9</output>
+    </div>
+
+    <label for="tabScope">Tab scope</label>
+    <select id="tabScope">
+      <option value="current">Current Edge window</option>
+      <option value="all">All Edge windows</option>
+    </select>
+
+    <p class="hint">Current window keeps each Edge window's Option+Tab history separate.</p>
+    <div id="status" aria-live="polite"></div>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

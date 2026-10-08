@@ -1,0 +1,11 @@
+:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { margin: 0; min-width: 290px; background: Canvas; color: CanvasText; }
+main { padding: 16px; }
+h1 { font-size: 17px; margin: 0 0 16px; }
+label { display: block; font-size: 13px; font-weight: 600; margin: 14px 0 7px; }
+.row { display: flex; gap: 10px; align-items: center; }
+input[type="range"] { flex: 1; }
+output { min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
+select { width: 100%; box-sizing: border-box; padding: 7px 8px; border-radius: 7px; }
+.hint { font-size: 11px; line-height: 1.35; opacity: .68; margin: 8px 0 0; }
+#status { min-height: 16px; margin-top: 10px; font-size: 11px; opacity: .72; }
